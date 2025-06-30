@@ -1,9 +1,11 @@
-const endDate = new Date("29 Jun, 2025 22:40:00").getTime();
+const endDate = new Date("27 Jun, 2025 22:15:00").getTime();
 const startDate = new Date().getTime();
 const totalDist = endDate - startDate;
 
 
-function updateTimer() {
+
+
+let interval = setInterval(function updateTimer() {
     const currTime = new Date().getTime();
 
     const distCovered = currTime - startDate;
@@ -30,7 +32,10 @@ function updateTimer() {
 
     document.getElementById("progress-bar").style.width = progress + "%";
 
-}
+    if (distRemaining <= 0) {
+        clearInterval(interval);
+        document.getElementById("countdown").innerHTML = "Expired";
+    }
 
-setInterval(updateTimer, 1000);
+}, 1000);
 
