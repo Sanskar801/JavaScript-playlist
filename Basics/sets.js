@@ -1,13 +1,8 @@
 // Sets
 
-const array = [1, 3, 4, 5, 66, 43, 43, 'this', 'that'];
-const books = new Set(array);
-// console.log(books);
-
 // Set Properties
 // size
 
-// console.log(books.size);
 
 // Basic Set Methods
 // new Set()
@@ -19,6 +14,32 @@ const books = new Set(array);
 // keys()
 // values()
 // entries()
+
+
+
+// Logic Methods
+
+// union()
+// difference()
+// intersection()
+// isDisjointFrom()
+// isSubsetOf()
+// isSupersetOf()
+// symmetricDifference()
+
+
+// https://www.w3schools.com/js/js_set_reference.asp
+
+const array = [1, 3, 4, 5, 66, 43, 43, 'this', 'that'];
+const books = new Set(array);
+// console.log(books);
+
+
+
+console.log(books.size);
+console.log()
+
+
 
 
 // books.forEach((value) => console.log(value));
@@ -37,12 +58,3 @@ const books = new Set(array);
 // } // set does not have keys so it gives [values, values]
 
 
-// Logic Methods
-
-// union()
-// difference()
-// intersection()
-// isDisjointFrom()
-// isSubsetOf()
-// isSupersetOf()
-// symmetricDifference()
